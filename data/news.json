@@ -1,0 +1,80 @@
+[
+  {
+    "id": "news-1",
+    "title": "جامعة العين تحصل على المركز الأول في التصنيف الوطني للجامعات العراقية",
+    "titleEn": "Al-Ayen University Ranks First in National Iraqi Universities Ranking",
+    "content": "حققت جامعة العين العراقية إنجازاً كبيراً بحصولها على المركز الأول في التصنيف الوطني للجامعات العراقية للعام 2024. يأتي هذا الإنجاز نتيجة للجهود المتواصلة في تطوير البحث العلمي والتعليم الأكاديمي.",
+    "contentEn": "Al-Ayen Iraqi University achieved a great accomplishment by ranking first in the national ranking of Iraqi universities for 2024. This achievement comes as a result of continuous efforts in developing scientific research and academic education.",
+    "excerpt": "جامعة العين تحقق المركز الأول في التصنيف الوطني للجامعات",
+    "excerptEn": "Al-Ayen University achieves first place in national universities ranking",
+    "image": "/images/news/ranking.jpg",
+    "category": "university",
+    "date": "2024-11-20",
+    "slug": "first-place-national-ranking"
+  },
+  {
+    "id": "news-2",
+    "title": "افتتاح مختبرات حديثة في كلية الهندسة",
+    "titleEn": "Opening of Modern Laboratories in College of Engineering",
+    "content": "افتتحت جامعة العين العراقية مختبرات حديثة ومتطورة في كلية الهندسة، مجهزة بأحدث التقنيات والأجهزة العلمية لخدمة الطلاب والباحثين.",
+    "contentEn": "Al-Ayen Iraqi University opened modern and advanced laboratories in the College of Engineering, equipped with the latest technologies and scientific equipment to serve students and researchers.",
+    "excerpt": "افتتاح مختبرات مجهزة بأحدث التقنيات في كلية الهندسة",
+    "excerptEn": "Opening of laboratories equipped with latest technologies in College of Engineering",
+    "image": "/images/news/labs.jpg",
+    "category": "university",
+    "date": "2024-11-15",
+    "slug": "new-engineering-labs"
+  },
+  {
+    "id": "news-3",
+    "title": "توقيع اتفاقية تعاون مع جامعة عالمية مرموقة",
+    "titleEn": "Signing Cooperation Agreement with Prestigious International University",
+    "content": "وقعت جامعة العين العراقية اتفاقية تعاون أكاديمي وبحثي مع جامعة عالمية مرموقة، تشمل تبادل الطلاب والباحثين والمشاريع البحثية المشتركة.",
+    "contentEn": "Al-Ayen Iraqi University signed an academic and research cooperation agreement with a prestigious international university, including student and researcher exchange and joint research projects.",
+    "excerpt": "اتفاقية تعاون جديدة مع جامعة عالمية",
+    "excerptEn": "New cooperation agreement with international university",
+    "image": "/images/news/agreement.jpg",
+    "category": "university",
+    "date": "2024-11-10",
+    "slug": "international-cooperation"
+  },
+  {
+    "id": "news-4",
+    "title": "إطلاق برنامج الماجستير في الذكاء الاصطناعي",
+    "titleEn": "Launch of Master's Program in Artificial Intelligence",
+    "content": "أعلنت جامعة العين عن إطلاق برنامج الماجستير في الذكاء الاصطناعي، وهو البرنامج الأول من نوعه في المنطقة، يهدف إلى إعداد كوادر متخصصة في هذا المجال الحيوي.",
+    "contentEn": "Al-Ayen University announced the launch of a Master's program in Artificial Intelligence, the first of its kind in the region, aimed at preparing specialized cadres in this vital field.",
+    "excerpt": "برنامج ماجستير جديد في الذكاء الاصطناعي",
+    "excerptEn": "New Master's program in Artificial Intelligence",
+    "image": "/images/news/ai-program.jpg",
+    "category": "university",
+    "date": "2024-11-05",
+    "slug": "ai-masters-program"
+  },
+  {
+    "id": "news-5",
+    "title": "وزارة التعليم العالي تكرم باحثي جامعة العين",
+    "titleEn": "Ministry of Higher Education Honors Al-Ayen University Researchers",
+    "content": "كرمت وزارة التعليم العالي والبحث العلمي عدداً من باحثي جامعة العين العراقية لإنجازاتهم البحثية المتميزة ونشرهم في مجلات عالمية رصينة.",
+    "contentEn": "The Ministry of Higher Education and Scientific Research honored a number of Al-Ayen Iraqi University researchers for their distinguished research achievements and publications in prestigious international journals.",
+    "excerpt": "تكريم باحثي الجامعة من قبل وزارة التعليم العالي",
+    "excerptEn": "University researchers honored by Ministry of Higher Education",
+    "image": "/images/news/honors.jpg",
+    "category": "ministry",
+    "date": "2024-11-01",
+    "slug": "ministry-honors"
+  },
+  {
+    "id": "news-6",
+    "title": "كلية الطب تنظم مؤتمراً دولياً في الطب الحديث",
+    "titleEn": "College of Medicine Organizes International Conference on Modern Medicine",
+    "content": "نظمت كلية الطب في جامعة العين مؤتمراً دولياً حول أحدث التطورات في الطب الحديث، بمشاركة باحثين من مختلف دول العالم.",
+    "contentEn": "The College of Medicine at Al-Ayen University organized an international conference on the latest developments in modern medicine, with the participation of researchers from various countries around the world.",
+    "excerpt": "مؤتمر دولي في الطب الحديث بكلية الطب",
+    "excerptEn": "International conference on modern medicine at College of Medicine",
+    "image": "/images/news/conference.jpg",
+    "category": "college",
+    "date": "2024-10-25",
+    "slug": "medicine-conference"
+  }
+]

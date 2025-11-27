@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About University",
+    "colleges": "Colleges",
+    "awards": "Awards",
+    "staff": "Faculty",
+    "conferences": "Conferences",
+    "scientificLinks": "Scientific Links",
+    "news": "News",
+    "contact": "Contact Us",
+    "systems": "Electronic Systems",
+    "students": "Student Affairs",
+    "vision": "Vision, Mission & Goals",
+    "council": "University Council",
+    "president": "President",
+    "presidentBio": "Biography",
+    "presidentMessage": "President's Message",
+    "deans": "College Deans",
+    "presidents": "University Presidents",
+    "continuingEducation": "Continuing Education",
+    "complaints": "Complaints Box",
+    "calendar": "Academic Calendar",
+    "achievements": "University Achievements",
+    "webDepartment": "Web Department",
+    "medical": "Medical Colleges",
+    "engineering": "Engineering Colleges",
+    "humanities": "Humanities Colleges",
+    "researchCenters": "Research Centers",
+    "units": "Units",
+    "strategy": "University Strategy"
+  },
+  "home": {
+    "welcome": "Welcome to Al-Ayen Iraqi University",
+    "description": "A leading university in higher education and scientific research",
+    "latestNews": "Latest News",
+    "viewMore": "View More"
+  },
+  "stats": {
+    "colleges": "Colleges",
+    "departments": "Departments",
+    "publications": "Publications",
+    "adminDepartments": "Admin Departments"
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "address": "Iraq, Dhi Qar - Al-Nile Street",
+    "phone": "Phone",
+    "email": "Email",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us"
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "search": "Search"
+  }
+}

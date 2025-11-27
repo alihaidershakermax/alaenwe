@@ -1,0 +1,63 @@
+{
+  "vision": {
+    "ar": "أن تكون جامعة العين العراقية مؤسسة تعليمية رائدة على المستوى الوطني والإقليمي، تتميز بالتميز الأكاديمي والبحث العلمي المتقدم، وتساهم في بناء مجتمع المعرفة وخدمة المجتمع.",
+    "en": "To be a leading educational institution at the national and regional level, distinguished by academic excellence and advanced scientific research, contributing to building a knowledge society and serving the community."
+  },
+  "mission": {
+    "ar": "تلتزم جامعة العين العراقية بتقديم تعليم عالي الجودة، وإجراء بحوث علمية متميزة، وتطوير الكوادر البشرية المؤهلة، والمساهمة في التنمية المستدامة للمجتمع من خلال الشراكة مع المؤسسات المحلية والدولية.",
+    "en": "Al-Ayen Iraqi University is committed to providing high-quality education, conducting distinguished scientific research, developing qualified human resources, and contributing to sustainable community development through partnership with local and international institutions."
+  },
+  "goals": {
+    "ar": [
+      "تحقيق التميز في التعليم والتعلم من خلال برامج أكاديمية متطورة",
+      "تعزيز البحث العلمي والابتكار في مختلف المجالات",
+      "بناء شراكات استراتيجية مع المؤسسات الأكاديمية والبحثية المحلية والدولية",
+      "تطوير البنية التحتية والتقنية لدعم العملية التعليمية والبحثية",
+      "خدمة المجتمع من خلال برامج التعليم المستمر والاستشارات",
+      "تعزيز القيم الأخلاقية والمهنية لدى الطلاب والكادر الأكاديمي"
+    ],
+    "en": [
+      "Achieve excellence in teaching and learning through advanced academic programs",
+      "Enhance scientific research and innovation in various fields",
+      "Build strategic partnerships with local and international academic and research institutions",
+      "Develop infrastructure and technology to support the educational and research process",
+      "Serve the community through continuing education programs and consultations",
+      "Promote ethical and professional values among students and academic staff"
+    ]
+  },
+  "history": {
+    "ar": "تأسست جامعة العين العراقية كمؤسسة تعليمية أهلية تهدف إلى تقديم تعليم عالي الجودة في مختلف التخصصات. منذ تأسيسها، سعت الجامعة إلى التميز الأكاديمي والبحثي، وتطوير برامجها لتلبية احتياجات سوق العمل والمجتمع. اليوم، تضم الجامعة 11 كلية و28 قسماً أكاديمياً، مع أكثر من 3014 بحث منشور في قواعد البيانات العالمية.",
+    "en": "Al-Ayen Iraqi University was established as a private educational institution aimed at providing high-quality education in various specializations. Since its establishment, the university has sought academic and research excellence, developing its programs to meet the needs of the labor market and society. Today, the university comprises 11 colleges and 28 academic departments, with more than 3014 research papers published in international databases."
+  },
+  "contact": {
+    "address": {
+      "ar": "العراق، ذي قار - شارع النيل",
+      "en": "Iraq, Dhi Qar - Al-Nile Street"
+    },
+    "phone": "+964 XXX XXX XXXX",
+    "email": "info@alayen.edu.iq",
+    "website": "https://alayen.edu.iq"
+  },
+  "socialMedia": [
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com/alayenuniversity"
+    },
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/alayenuniversity"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com/alayenuniversity"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://youtube.com/@alayenuniversity"
+    },
+    {
+      "platform": "telegram",
+      "url": "https://t.me/alayenuniversity"
+    }
+  ]
+}

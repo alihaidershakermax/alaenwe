@@ -1,0 +1,132 @@
+[
+  {
+    "id": "medicine",
+    "name": "كلية الطب",
+    "nameEn": "College of Medicine",
+    "type": "medical",
+    "website": "https://med.alayen.edu.iq/",
+    "logo": "https://med.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  },
+  {
+    "id": "dentistry",
+    "name": "كلية طب الاسنان",
+    "nameEn": "College of Dentistry",
+    "type": "medical",
+    "website": "https://dent.alayen.edu.iq/",
+    "logo": "https://dent.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  },
+  {
+    "id": "pharmacy",
+    "name": "كلية الصيدلة",
+    "nameEn": "College of Pharmacy",
+    "type": "medical",
+    "website": "https://pharm.alayen.edu.iq/",
+    "logo": "https://pharm.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  },
+  {
+    "id": "health-tech",
+    "name": "كلية التقنيات الطبية والصحية",
+    "nameEn": "College of Health and Medical Technologies",
+    "type": "medical",
+    "website": "https://hmtech.alayen.edu.iq/",
+    "logo": "https://hmtech.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": [
+      { "name": "قسم التخدير", "nameEn": "Anesthesia", "url": "https://hmtech.alayen.edu.iq/colleges/index/18" },
+      { "name": "قسم البصريات", "nameEn": "Optics", "url": "https://hmtech.alayen.edu.iq/colleges/index/19" },
+      { "name": "قسم صناعة الاسنان", "nameEn": "Dental Technology", "url": "https://hmtech.alayen.edu.iq/colleges/index/23" },
+      { "name": "قسم تقنيات الاشعة", "nameEn": "Radiology", "url": "https://hmtech.alayen.edu.iq/colleges/index/24" },
+      { "name": "قسم المختبرات الطبية", "nameEn": "Medical Labs", "url": "https://hmtech.alayen.edu.iq/colleges/index/25" },
+      { "name": "قسم تقنيات الكلى الصناعية", "nameEn": "Dialysis", "url": "https://hmtech.alayen.edu.iq/colleges/index/49002" },
+      { "name": "قسم تقنيات التجميل بالليزر", "nameEn": "Laser Cosmetics", "url": "https://hmtech.alayen.edu.iq/colleges/index/49003" },
+      { "name": "قسم تقنيات طب الطوارئ", "nameEn": "Emergency Medicine", "url": "https://hmtech.alayen.edu.iq/colleges/index/49042" }
+    ]
+  },
+  {
+    "id": "physical-education",
+    "name": "كلية التربية البدنية وعلوم الرياضة",
+    "nameEn": "College of Physical Education",
+    "type": "humanities",
+    "website": "https://physedu.alayen.edu.iq/",
+    "logo": "https://physedu.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  },
+  {
+    "id": "technical-engineering",
+    "name": "الكلية التقنية الهندسية",
+    "nameEn": "Technical Engineering College",
+    "type": "engineering",
+    "website": "https://teeng.alayen.edu.iq/",
+    "logo": "https://teeng.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": [
+      { "name": "قسم تقنيات هندسة الاجهزة الطبية", "nameEn": "Medical Devices Eng.", "url": "https://teeng.alayen.edu.iq/colleges/index/31" },
+      { "name": "قسم هندسة تقنيات الحاسوب", "nameEn": "Computer Eng.", "url": "https://teeng.alayen.edu.iq/colleges/index/32" },
+      { "name": "قسم هندسة تقنيات الأمن السيبراني", "nameEn": "Cybersecurity", "url": "https://alayen.edu.iq/colleges/index/49009" },
+      { "name": "قسم هندسة تقنيات الوقود والطاقة", "nameEn": "Fuel & Energy", "url": "https://alayen.edu.iq/colleges/index/49010" },
+      { "name": "قسم هندسة الفيزياء الصحية والعلاج الاشعاعي", "nameEn": "Health Physics", "url": "https://alayen.edu.iq/colleges/index/49011" }
+    ]
+  },
+  {
+    "id": "law",
+    "name": "كلية القانون",
+    "nameEn": "College of Law",
+    "type": "humanities",
+    "website": "https://law.alayen.edu.iq/",
+    "logo": "https://law.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  },
+  {
+    "id": "education",
+    "name": "كلية التربية",
+    "nameEn": "College of Education",
+    "type": "humanities",
+    "website": "https://edu.alayen.edu.iq/",
+    "logo": "https://edu.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": [
+      { "name": "قسم الكيمياء", "nameEn": "Chemistry", "url": "https://edu.alayen.edu.iq/colleges/index/40" },
+      { "name": "قسم اللغة الانكليزية", "nameEn": "English", "url": "https://edu.alayen.edu.iq/colleges/index/41" },
+      { "name": "قسم الفيزياء", "nameEn": "Physics", "url": "https://edu.alayen.edu.iq/colleges/index/49014" },
+      { "name": "قسم الرياضيات", "nameEn": "Mathematics", "url": "https://edu.alayen.edu.iq/colleges/index/49016" },
+      { "name": "قسم معلم الصفوف الاولى", "nameEn": "Primary Teacher", "url": "https://edu.alayen.edu.iq/colleges/index/49025" },
+      { "name": "قسم التربية الفنية", "nameEn": "Art Education", "url": "https://edu.alayen.edu.iq/colleges/index/49026" }
+    ]
+  },
+  {
+    "id": "engineering",
+    "name": "كلية الهندسة",
+    "nameEn": "College of Engineering",
+    "type": "engineering",
+    "website": "https://eng.alayen.edu.iq/",
+    "logo": "https://eng.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": [
+      { "name": "قسم هندسة النفط", "nameEn": "Petroleum Eng.", "url": "https://eng.alayen.edu.iq/colleges/index/3" },
+      { "name": "قسم هندسة الذكاء الاصطناعي", "nameEn": "AI Engineering", "url": "https://eng.alayen.edu.iq/colleges/index/37" },
+      { "name": "قسم هندسة الطب الحياتي", "nameEn": "Biomedical Eng.", "url": "https://eng.alayen.edu.iq/colleges/index/43" },
+      { "name": "قسم الليزر والالكترونيات البصرية", "nameEn": "Laser & Optoelectronics", "url": "https://eng.alayen.edu.iq/colleges/index/49021" }
+    ]
+  },
+  {
+    "id": "science",
+    "name": "كلية العلوم",
+    "nameEn": "College of Science",
+    "type": "engineering",
+    "website": "https://sci.alayen.edu.iq/",
+    "logo": "https://sci.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": [
+      { "name": "قسم الادلة الجنائية", "nameEn": "Forensic Science", "url": "https://sci.alayen.edu.iq/colleges/index/49030/" },
+      { "name": "قسم الاحياء المجهرية", "nameEn": "Microbiology", "url": "https://sci.alayen.edu.iq/colleges/index/49031/" },
+      { "name": "قسم الكيمياء الحياتية", "nameEn": "Biochemistry", "url": "https://sci.alayen.edu.iq/colleges/index/49032/" }
+    ]
+  },
+  {
+    "id": "business",
+    "name": "كلية الادارة والاقتصاد",
+    "nameEn": "College of Business and Economics",
+    "type": "humanities",
+    "website": "https://business.alayen.edu.iq/",
+    "logo": "https://business.alayen.edu.iq/public/ar/image/site/logo.png",
+    "departments": []
+  }
+]

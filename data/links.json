@@ -1,0 +1,122 @@
+[
+  {
+    "id": "elearning",
+    "title": "نظام جامعة العين العراقية التعليمي",
+    "titleEn": "Al-Ayen University E-Learning System",
+    "description": "منصة التعليم الإلكتروني للطلاب والتدريسيين",
+    "descriptionEn": "E-learning platform for students and faculty",
+    "url": "https://elearning.alayen.edu.iq/Account/Login?ReturnUrl=%2F",
+    "category": "system",
+    "icon": "graduation-cap"
+  },
+  {
+    "id": "teacher-sites",
+    "title": "نظام مواقع التدريسيين",
+    "titleEn": "Faculty Websites System",
+    "description": "مواقع أعضاء الهيئة التدريسية",
+    "descriptionEn": "Faculty members' websites",
+    "url": "https://teacher.alayen.edu.iq/login/user",
+    "category": "system",
+    "icon": "user"
+  },
+  {
+    "id": "certificates",
+    "title": "نظام إصدار شهادات لفعاليات جامعة العين العراقية",
+    "titleEn": "Al-Ayen University Event Certificates System",
+    "description": "إصدار شهادات المشاركة في الفعاليات",
+    "descriptionEn": "Issue participation certificates for events",
+    "url": "https://alayen.edu.iq/continuous_education/participation_certificates",
+    "category": "system",
+    "icon": "award"
+  },
+  {
+    "id": "results",
+    "title": "نظام النتائج الخاص بالطلبة",
+    "titleEn": "Student Results System",
+    "description": "الاستعلام عن نتائج الامتحانات",
+    "descriptionEn": "Inquiry about exam results",
+    "url": "https://learning.alayen.edu.iq/#/",
+    "category": "system",
+    "icon": "file-text"
+  },
+  {
+    "id": "bologna",
+    "title": "نظام مسار بولونيا",
+    "titleEn": "Bologna Process System",
+    "description": "نظام إدارة المناهج والبرامج الأكاديمية",
+    "descriptionEn": "Curriculum and academic programs management system",
+    "url": "https://alayen.bis.edu.iq/",
+    "category": "system",
+    "icon": "book"
+  },
+  {
+    "id": "electronic-systems",
+    "title": "الأنظمة الإلكترونية",
+    "titleEn": "Electronic Systems",
+    "description": "بوابة الأنظمة الإلكترونية للجامعة",
+    "descriptionEn": "University electronic systems portal",
+    "url": "https://systems.alayen.edu.iq/",
+    "category": "system",
+    "icon": "monitor"
+  },
+  {
+    "id": "researchgate",
+    "title": "ResearchGate",
+    "titleEn": "ResearchGate",
+    "description": "صفحة جامعة العين على ResearchGate",
+    "descriptionEn": "Al-Ayen University page on ResearchGate",
+    "url": "https://www.researchgate.net/institution/Al-Ayen_University/members",
+    "category": "research",
+    "icon": "search"
+  },
+  {
+    "id": "orcid",
+    "title": "ORCID",
+    "titleEn": "ORCID",
+    "description": "باحثو جامعة العين على ORCID",
+    "descriptionEn": "Al-Ayen University researchers on ORCID",
+    "url": "https://orcid.org/orcid-search/search?searchQuery=@alayen.edu.iq",
+    "category": "research",
+    "icon": "id-card"
+  },
+  {
+    "id": "publons",
+    "title": "Publons",
+    "titleEn": "Publons",
+    "description": "صفحة جامعة العين على Publons",
+    "descriptionEn": "Al-Ayen University page on Publons",
+    "url": "https://publons.com/institution/44930/",
+    "category": "research",
+    "icon": "book-open"
+  },
+  {
+    "id": "medicine-college",
+    "title": "كلية الطب",
+    "titleEn": "College of Medicine",
+    "description": "موقع كلية الطب",
+    "descriptionEn": "College of Medicine website",
+    "url": "https://med.alayen.edu.iq/",
+    "category": "college",
+    "icon": "heart"
+  },
+  {
+    "id": "dentistry-college",
+    "title": "كلية طب الأسنان",
+    "titleEn": "College of Dentistry",
+    "description": "موقع كلية طب الأسنان",
+    "descriptionEn": "College of Dentistry website",
+    "url": "https://dent.alayen.edu.iq/",
+    "category": "college",
+    "icon": "smile"
+  },
+  {
+    "id": "pharmacy-college",
+    "title": "كلية الصيدلة",
+    "titleEn": "College of Pharmacy",
+    "description": "موقع كلية الصيدلة",
+    "descriptionEn": "College of Pharmacy website",
+    "url": "https://pharm.alayen.edu.iq/",
+    "category": "college",
+    "icon": "pill"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عن الجامعة",
+    "colleges": "الكليات",
+    "awards": "الجوائز",
+    "staff": "الكادر التدريسي",
+    "conferences": "المؤتمرات",
+    "scientificLinks": "روابط علمية",
+    "news": "الأخبار",
+    "contact": "اتصل بنا",
+    "systems": "الأنظمة الإلكترونية",
+    "students": "شؤون الطلبة",
+    "vision": "الرؤية والرسالة والأهداف",
+    "council": "مجلس الجامعة",
+    "president": "رئيس الجامعة",
+    "presidentBio": "السيرة الذاتية",
+    "presidentMessage": "كلمة رئيس الجامعة",
+    "deans": "عمداء الكليات",
+    "presidents": "رؤساء الجامعة",
+    "continuingEducation": "التعليم المستمر",
+    "complaints": "صندوق الشكاوى",
+    "calendar": "التقويم الجامعي",
+    "achievements": "انجازات الجامعة",
+    "webDepartment": "شعبة المواقع الالكترونية",
+    "medical": "الكليات الطبية",
+    "engineering": "الكليات الهندسية",
+    "humanities": "الكليات الإنسانية",
+    "researchCenters": "مراكز الجامعة",
+    "units": "الوحدات",
+    "strategy": "استراتيجية الجامعة"
+  },
+  "home": {
+    "welcome": "مرحباً بكم في جامعة العين العراقية",
+    "description": "جامعة رائدة في التعليم العالي والبحث العلمي",
+    "latestNews": "آخر الأخبار",
+    "viewMore": "عرض المزيد"
+  },
+  "stats": {
+    "colleges": "كلية",
+    "departments": "قسم",
+    "publications": "بحث منشور",
+    "adminDepartments": "قسم إداري"
+  },
+  "footer": {
+    "contact": "تواصل معنا",
+    "address": "العراق، ذي قار - شارع النيل",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "quickLinks": "روابط سريعة",
+    "followUs": "تابعنا"
+  },
+  "common": {
+    "readMore": "اقرأ المزيد",
+    "viewAll": "عرض الكل",
+    "loading": "جاري التحميل...",
+    "search": "بحث"
+  }
+}
