@@ -254,38 +254,55 @@ export default async function PresidentPage({
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
               <MapPin className="w-10 h-10 mx-auto mb-4 text-yellow-400" />
               <h3 className="font-bold mb-2">{isRTL ? 'المكتب' : 'Office'}</h3>
-              labelAr: 'سنة خبرة أكاديمية',
-              labelEn: 'Years of Experience',
-    },
-              ];
+              <p className="text-blue-200">{isRTL ? 'مكتب رئيس الجامعة' : 'President Office'}</p>
+            </div>
+          </div>
+        </section>
 
-              const qualifications = [
-              {
-                degree: isRTL ? 'دكتوراه' : 'PhD',
-              field: isRTL ? 'الهندسة الطبية الحياتية' : 'Biomedical Engineering',
-              university: isRTL ? 'جامعة بغداد' : 'University of Baghdad',
-              year: '1995',
-    },
-              {
-                degree: isRTL ? 'ماجستير' : 'Masters',
-              field: isRTL ? 'الهندسة الكهربائية' : 'Electrical Engineering',
-              university: isRTL ? 'جامعة بغداد' : 'University of Baghdad',
-              year: '1990',
-    },
-              {
-                degree: isRTL ? 'بكالوريوس' : 'Bachelor',
-              field: isRTL ? 'الهندسة الكهربائية' : 'Electrical Engineering',
-              university: isRTL ? 'جامعة بغداد' : 'University of Baghdad',
-              year: '1985',
-    },
-              ];
+        {/* Related Links */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                {isRTL ? 'روابط ذات صلة' : 'Related Links'}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link
+                  href={`/${locale}/council`}
+                  className="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 transition-colors group"
+                >
+                  <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-blue-700">
+                    {isRTL ? 'مجلس الجامعة' : 'University Council'}
+                  </h3>
+                  <p className="text-gray-600">
+                    {isRTL ? 'تعرف على أعضاء مجلس الجامعة' : 'Meet the University Council members'}
+                  </p>
+                </Link>
+                <Link
+                  href={`/${locale}/about`}
+                  className="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 transition-colors group"
+                >
+                  <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-blue-700">
+                    {isRTL ? 'عن الجامعة' : 'About University'}
+                  </h3>
+                  <p className="text-gray-600">
+                    {isRTL ? 'تعرف على رؤية ورسالة الجامعة' : 'Learn about our vision and mission'}
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+}
 
-              return (
-              <div className="min-h-screen bg-gray-50">
-                {/* Hero Section */}
-                <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 overflow-hidden">
-                  {/* Background Pattern */}
-                  <div className="absolute inset-0 opacity-10">
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0" style={{
                       backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
                       backgroundSize: '40px 40px'
@@ -460,6 +477,7 @@ export default async function PresidentPage({
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-900 font-bold rounded-full hover:bg-yellow-400 transition-colors"
                       >
+
                         <span>{isRTL ? 'عرض مجلس الجامعة' : 'View University Council'}</span>
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -467,5 +485,9 @@ export default async function PresidentPage({
                   </div>
                 </section>
               </div>
-              );
+            </div>
+          </div>
+        </section>
+      </div>
+    );
 }
