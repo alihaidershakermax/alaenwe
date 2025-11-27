@@ -10,10 +10,9 @@ export interface College {
 }
 
 export interface Department {
-  id: string;
   name: string;
   nameEn: string;
-  website?: string;
+  url?: string;
 }
 
 export interface News {

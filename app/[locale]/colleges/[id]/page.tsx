@@ -104,13 +104,13 @@ export default async function CollegeDetailPage({ params }: Props) {
                 
                 return (
                   <div
-                    key={dept.id}
+                    key={dept.name}
                     className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-university-primary hover:bg-blue-50 transition-all"
                   >
                     <span className="font-medium text-gray-900">{deptName}</span>
-                    {dept.website && (
+                    {dept.url && (
                       <a
-                        href={dept.website}
+                        href={dept.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-university-primary hover:text-university-secondary transition-colors"

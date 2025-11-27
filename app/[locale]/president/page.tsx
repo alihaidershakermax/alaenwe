@@ -247,39 +247,6 @@ export default async function PresidentPage({
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              {isRTL ? 'روابط ذات صلة' : 'Related Links'}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Link
-                href={`/${locale}/council`}
-                className="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 transition-colors group"
-              >
-                <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-blue-700">
-                  {isRTL ? 'مجلس الجامعة' : 'University Council'}
-                </h3>
-                <p className="text-gray-600">
-                  {isRTL ? 'تعرف على أعضاء مجلس الجامعة' : 'Meet the University Council members'}
-                </p>
-              </Link>
-              <Link
-                href={`/${locale}/about`}
-                className="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 transition-colors group"
-              >
-                <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-blue-700">
-                  {isRTL ? 'عن الجامعة' : 'About University'}
-                </h3>
-                <p className="text-gray-600">
-                  {isRTL ? 'تعرف على رؤية ورسالة الجامعة' : 'Learn about our vision and mission'}
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
