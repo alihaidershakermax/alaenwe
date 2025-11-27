@@ -10,10 +10,7 @@ import {
   Mail,
   Phone,
   MapPin,
-  FileText,
-  ExternalLink,
   Calendar,
-  Briefcase,
 } from 'lucide-react';
 
 export async function generateMetadata({
@@ -87,9 +84,7 @@ export default async function PresidentPage({
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
@@ -99,10 +94,8 @@ export default async function PresidentPage({
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* President Image */}
             <div className="relative order-2 lg:order-1">
               <div className="relative max-w-md mx-auto">
-                {/* Decorative Frame */}
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl transform rotate-3" />
                 <div className="relative bg-white rounded-3xl p-2 shadow-2xl">
                   <img
@@ -111,14 +104,12 @@ export default async function PresidentPage({
                     className="w-full h-auto rounded-2xl"
                   />
                 </div>
-                {/* Badge */}
                 <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-8 py-3 rounded-full font-bold shadow-xl">
                   {isRTL ? 'رئيس الجامعة' : 'University President'}
                 </div>
               </div>
             </div>
 
-            {/* President Info */}
             <div className="order-1 lg:order-2 text-center lg:text-right rtl:lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
                 <User className="w-5 h-5" />
@@ -133,7 +124,6 @@ export default async function PresidentPage({
                 {isRTL ? 'رئيس جامعة العين العراقية' : 'President of Al-Ayen Iraqi University'}
               </p>
 
-              {/* Quick Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {achievements.map((item, index) => {
                   const Icon = item.icon;
@@ -151,7 +141,6 @@ export default async function PresidentPage({
         </div>
       </section>
 
-      {/* President's Message */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -202,7 +191,6 @@ export default async function PresidentPage({
         </div>
       </section>
 
-      {/* Qualifications */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -231,7 +219,6 @@ export default async function PresidentPage({
         </div>
       </section>
 
-      {/* Contact */}
       <section className="py-20 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -260,7 +247,6 @@ export default async function PresidentPage({
         </div>
       </section>
 
-      {/* Related Links */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
