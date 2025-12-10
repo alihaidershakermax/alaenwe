@@ -28,19 +28,68 @@
     "humanities": "Humanities Colleges",
     "researchCenters": "Research Centers",
     "units": "Units",
-    "strategy": "University Strategy"
+    "strategy": "University Strategy",
+    "talents": "Student Talents"
   },
   "home": {
     "welcome": "Welcome to Al-Ayen Iraqi University",
     "description": "A leading university in higher education and scientific research",
     "latestNews": "Latest News",
-    "viewMore": "View More"
+    "viewMore": "View More",
+    "heroTitle": "Al-Ayen Iraqi University",
+    "heroSubtitle": "We preserve values and prepare for the future",
+    "exploreUniversity": "Explore University",
+    "watchVideo": "Watch Video"
+  },
+  "about": {
+    "title": "About Al-Ayen Iraqi University",
+    "description": "Al-Ayen Iraqi University is a leading private educational institution in Iraq, committed to providing high-quality education and fostering scientific research.",
+    "vision": "Vision",
+    "mission": "Mission",
+    "goals": "Goals",
+    "visionText": "To be a distinguished university regionally and internationally in education, scientific research, and community service.",
+    "missionText": "To provide distinguished higher education and conduct advanced scientific research that serves society and contributes to sustainable development.",
+    "history": "University History",
+    "achievements": "Our Achievements"
+  },
+  "president": {
+    "title": "University President",
+    "message": "President's Message",
+    "biography": "Biography",
+    "welcomeMessage": "Welcome to Al-Ayen Iraqi University, where we strive for excellence in education and research."
+  },
+  "council": {
+    "title": "University Council",
+    "description": "The University Council is the highest governing body of Al-Ayen Iraqi University.",
+    "members": "Council Members",
+    "responsibilities": "Responsibilities"
+  },
+  "colleges": {
+    "title": "Our Colleges",
+    "description": "Al-Ayen Iraqi University comprises multiple colleges offering diverse academic programs.",
+    "medical": "Medical Colleges",
+    "engineering": "Engineering Colleges",
+    "humanities": "Humanities Colleges",
+    "viewCollege": "View College",
+    "departments": "Departments",
+    "programs": "Programs"
+  },
+  "news": {
+    "title": "Latest News",
+    "description": "Stay updated with the latest news and events from Al-Ayen Iraqi University.",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "category": "Category",
+    "allNews": "All News"
   },
   "stats": {
     "colleges": "Colleges",
-    "departments": "Departments",
+    "departments": "Departments", 
     "publications": "Publications",
-    "adminDepartments": "Admin Departments"
+    "adminDepartments": "Admin Departments",
+    "students": "Students",
+    "faculty": "Faculty Members",
+    "graduates": "Graduates"
   },
   "footer": {
     "contact": "Contact Us",
@@ -48,12 +97,38 @@
     "phone": "Phone",
     "email": "Email",
     "quickLinks": "Quick Links",
-    "followUs": "Follow Us"
+    "followUs": "Follow Us",
+    "aboutUniversity": "About University",
+    "academicPrograms": "Academic Programs",
+    "admissions": "Admissions",
+    "studentServices": "Student Services",
+    "research": "Research",
+    "copyright": "© 2024 Al-Ayen Iraqi University. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with Al-Ayen Iraqi University",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
   },
   "common": {
     "readMore": "Read More",
     "viewAll": "View All",
     "loading": "Loading...",
-    "search": "Search"
+    "search": "Search",
+    "learnMore": "Learn More",
+    "discover": "Discover",
+    "explore": "Explore",
+    "getStarted": "Get Started",
+    "backToHome": "Back to Home",
+    "pageNotFound": "Page Not Found",
+    "comingSoon": "Coming Soon"
   }
 }

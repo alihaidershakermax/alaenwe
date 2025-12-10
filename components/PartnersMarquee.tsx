@@ -1,12 +1,12 @@
 'use client';
 
 import { useLocale } from 'next-intl';
+import { BlurText, InfiniteScroll } from './reactbits';
 
 export default function PartnersMarquee() {
   const locale = useLocale();
   const isRTL = locale === 'ar';
 
-  // الاتفاقيات العالمية
   const internationalAgreements = [
     { logo: 'https://alayen.edu.iq/public/ar/save_file/39a295d19f79c06b00eb767ae6b697e5_.jpg', url: 'https://alayen.edu.iq/agreements/details/1' },
     { logo: 'https://alayen.edu.iq/public/ar/save_file/a4d51484261f729e0cd966f2ea78fe2a_.jpg', url: 'https://alayen.edu.iq/agreements/details/2' },
@@ -18,7 +18,6 @@ export default function PartnersMarquee() {
     { logo: 'https://alayen.edu.iq/public/ar/save_file/f26026be3af7898d5e87b591454d7031_.jpg', url: 'https://alayen.edu.iq/agreements/details/8' },
   ];
 
-  // التصنيفات العالمية
   const globalRankings = [
     { logo: 'https://alayen.edu.iq/public/ar/save_file/ce4dcfce111ea91df723e909ba6d5ae1_.png', url: 'https://alayen.edu.iq/agreements/details/48' },
     { logo: 'https://alayen.edu.iq/public/ar/save_file/0fce5373d980788f57dddef92f636b3d_.png', url: 'https://alayen.edu.iq/agreements/details/49' },
@@ -29,75 +28,67 @@ export default function PartnersMarquee() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 overflow-hidden">
-      <div className="container mx-auto px-4 mb-10">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden relative">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 mb-12 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-            {isRTL ? 'الاتفاقيات والتصنيفات العالمية' : 'Agreements & Global Rankings'}
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full" />
+          <BlurText
+            text={isRTL ? 'الاتفاقيات والتصنيفات العالمية' : 'Agreements & Global Rankings'}
+            className="text-3xl md:text-4xl font-black text-gray-900 mb-4"
+            delay={0}
+            direction="bottom"
+          />
+          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full" />
         </div>
       </div>
 
-      {/* الاتفاقيات العالمية - أبيض */}
-      <div className="mb-8">
-        <p className="text-center text-sm font-bold text-blue-600 mb-4">
+      {/* الاتفاقيات العالمية */}
+      <div className="mb-10">
+        <p className="text-center text-sm font-bold text-blue-600 mb-6">
           {isRTL ? 'الاتفاقيات العالمية' : 'International Agreements'}
         </p>
-        <div className="overflow-hidden">
-          <div className="flex animate-marquee-left">
-            {[...internationalAgreements, ...internationalAgreements, ...internationalAgreements].map((agreement, i) => (
-              <a 
-                key={i}
-                href={agreement.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 mx-3 w-28 h-28 bg-white border border-gray-200 rounded-xl flex items-center justify-center shadow-sm hover:shadow-lg hover:border-blue-500 transition-all cursor-pointer p-2"
-              >
-                <img src={agreement.logo} alt="" className="w-full h-full object-contain" />
-              </a>
-            ))}
-          </div>
-        </div>
+        <InfiniteScroll speed={40} direction="left" pauseOnHover>
+          {internationalAgreements.map((agreement, i) => (
+            <a 
+              key={i}
+              href={agreement.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 mx-4 w-28 h-28 bg-white border border-gray-200 rounded-2xl flex items-center justify-center shadow-md hover:shadow-xl hover:border-blue-400 hover:scale-105 transition-all duration-300 cursor-pointer p-3"
+            >
+              <img src={agreement.logo} alt="" className="w-full h-full object-contain" />
+            </a>
+          ))}
+        </InfiniteScroll>
       </div>
 
-      {/* التصنيفات العالمية - أزرق */}
-      <div className="mb-8">
-        <p className="text-center text-sm font-bold text-gray-900 mb-4">
+      {/* التصنيفات العالمية */}
+      <div className="mb-12">
+        <p className="text-center text-sm font-bold text-gray-900 mb-6">
           {isRTL ? 'التصنيفات العالمية' : 'Global Rankings'}
         </p>
-        <div className="overflow-hidden">
-          <div className="flex animate-marquee-right">
-            {[...globalRankings, ...globalRankings, ...globalRankings, ...globalRankings].map((rank, i) => (
-              <a 
-                key={i}
-                href={rank.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 mx-3 w-28 h-28 bg-blue-600 rounded-xl flex items-center justify-center shadow-sm hover:shadow-lg hover:bg-blue-700 transition-all cursor-pointer p-2"
-              >
-                <div className="w-full h-full rounded-lg bg-white flex items-center justify-center overflow-hidden">
-                  <img src={rank.logo} alt="" className="w-full h-full object-contain" />
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+        <InfiniteScroll speed={35} direction="right" pauseOnHover>
+          {globalRankings.map((rank, i) => (
+            <a 
+              key={i}
+              href={rank.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 mx-4 w-28 h-28 bg-blue-600 rounded-2xl flex items-center justify-center shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer p-2"
+            >
+              <div className="w-full h-full rounded-xl bg-white flex items-center justify-center overflow-hidden p-2">
+                <img src={rank.logo} alt="" className="w-full h-full object-contain" />
+              </div>
+            </a>
+          ))}
+        </InfiniteScroll>
       </div>
 
-      {/* إحصائيات بسيطة */}
-      <div className="container mx-auto px-4 pt-6">
-        <div className="flex justify-center gap-8 flex-wrap">
-          <div className="text-center">
-            <span className="text-3xl font-black text-blue-600">50+</span>
-            <p className="text-sm text-gray-600">{isRTL ? 'اتفاقية' : 'Agreements'}</p>
-          </div>
-          <div className="text-center">
-            <span className="text-3xl font-black text-gray-900">8+</span>
-            <p className="text-sm text-gray-600">{isRTL ? 'تصنيف عالمي' : 'Rankings'}</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

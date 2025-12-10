@@ -251,41 +251,102 @@ export default function Header() {
         </div>
       </div>
 
+      </header>
+
+      {/* Mobile Menu Overlay - Outside header */}
       {isMenuOpen && (
-        <div className={`lg:hidden fixed left-0 right-0 bg-black/98 backdrop-blur-xl shadow-2xl z-30 ${
-          isScrolled ? 'top-16' : 'top-[6.5rem]'
-        }`}>
-          <nav className="container mx-auto px-4 py-4 max-h-[calc(100vh-7rem)] overflow-y-auto">
+        <div 
+          className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[100] transition-opacity duration-300"
+          onClick={() => setIsMenuOpen(false)} 
+        />
+      )}
+
+      {/* Mobile Menu - Outside header */}
+      <div className={`lg:hidden fixed top-0 bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-[80%] max-w-[320px] bg-black z-[101] transform transition-transform duration-300 ease-out shadow-2xl ${
+        isMenuOpen ? 'translate-x-0' : isRTL ? 'translate-x-full' : '-translate-x-full'
+      }`}>
+        {/* Mobile Menu Header */}
+        <div className="flex items-center justify-between p-4 bg-gray-900 border-b border-white/10">
+          <Link href={`/${locale}`} onClick={() => setIsMenuOpen(false)} className="flex items-center gap-3">
+            <img src="/images/logo.png" alt="Logo" className="w-10 h-10 object-contain brightness-0 invert" />
+            <div>
+              <h3 className="text-sm font-bold text-white">{isRTL ? 'جامعة العين' : 'Al-Ayen'}</h3>
+              <p className="text-[10px] text-gray-400">{isRTL ? 'العراقية' : 'Iraqi University'}</p>
+            </div>
+          </Link>
+          <button onClick={() => setIsMenuOpen(false)} className="p-2 text-white bg-white/10 hover:bg-white/20 rounded-full transition-colors">
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Mobile Menu Content */}
+        <nav className="p-4 h-[calc(100vh-72px)] overflow-y-auto bg-black">
+          {/* Navigation Links */}
+          <div className="space-y-1 mb-6">
             {navItems.map((item) => (
               <Link 
-                key={item.key} 
+                key={item.key}
                 href={item.href} 
                 onClick={() => setIsMenuOpen(false)} 
-                className="block px-4 py-3 text-white font-semibold border-b border-white/10 hover:bg-white/10 transition-colors rounded-lg"
+                className="flex items-center justify-between px-4 py-3 text-white hover:bg-blue-600/20 rounded-xl transition-colors border-b border-white/5"
               >
-                {isRTL ? item.nameAr : item.nameEn}
+                <span className="font-medium text-sm">{isRTL ? item.nameAr : item.nameEn}</span>
+                {(item.dropdown || item.isColleges) && (
+                  <ChevronRight className={`w-4 h-4 text-gray-500 ${isRTL ? 'rotate-180' : ''}`} />
+                )}
               </Link>
             ))}
-            {/* زر مواهب الطلاب للموبايل */}
+            
+            {/* Talents Link */}
             <a 
               href="https://alayen.edu.iq/talents" 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="block px-4 py-3 text-white font-semibold border-b border-white/10 hover:bg-white/10 transition-colors rounded-lg"
+              className="flex items-center px-4 py-3 text-white hover:bg-blue-600/20 rounded-xl transition-colors border-b border-white/5"
             >
-              {isRTL ? 'مواهب الطلاب' : 'Talents'}
+              <span className="font-medium text-sm">{isRTL ? 'مواهب الطلاب' : 'Talents'}</span>
             </a>
-            
-            {/* زر الأنظمة الإلكترونية للموبايل */}
+          </div>
+
+          {/* Colleges Section */}
+          <div className="mb-6 bg-gray-900/50 rounded-xl p-3">
+            <h4 className="px-2 py-2 text-xs font-bold text-blue-400 uppercase tracking-wider">
+              {isRTL ? 'الكليات' : 'Colleges'}
+            </h4>
+            <div className="grid grid-cols-2 gap-1">
+              {collegesData.slice(0, 6).map((college) => (
+                <a
+                  key={college.id}
+                  href={college.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-2 py-2 text-[11px] text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors truncate"
+                >
+                  {isRTL ? college.nameAr.replace('كلية ', '') : college.nameEn.replace('College of ', '')}
+                </a>
+              ))}
+            </div>
+            <Link 
+              href={`/${locale}/colleges`}
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-2 py-2 mt-1 text-xs text-blue-400 hover:text-blue-300 font-medium"
+            >
+              {isRTL ? 'عرض الكل ←' : '→ View all'}
+            </Link>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="space-y-3 pt-4 border-t border-white/10">
             <a 
               href="https://systems.alayen.edu.iq/" 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 mt-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 transition-colors"
+              className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/30"
             >
-              <Monitor className="w-4 h-4" />
+              <Monitor className="w-5 h-5" />
               {isRTL ? 'الأنظمة الإلكترونية' : 'E-Systems'}
             </a>
             
@@ -294,15 +355,32 @@ export default function Header() {
                 switchLocale();
                 setIsMenuOpen(false);
               }} 
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 mt-2 mb-2 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors"
+              className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors"
             >
-              <Globe className="w-4 h-4" />
+              <Globe className="w-5 h-5" />
               {isRTL ? 'English' : 'العربية'}
             </button>
-          </nav>
-        </div>
-      )}
-      </header>
+          </div>
+
+          {/* Social Links */}
+          <div className="mt-6 pt-4 border-t border-white/10">
+            <div className="flex justify-center gap-3">
+              <a href="https://www.facebook.com/universityofalayen/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+              </a>
+              <a href="https://instagram.com/alayen_iraqi_university" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition-colors">
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+              </a>
+              <a href="https://t.me/alayen_university" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-sky-500 transition-colors">
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" /></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCrZWxBoVuC8pQCGGQIpLelw" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition-colors">
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </>
   );
 }

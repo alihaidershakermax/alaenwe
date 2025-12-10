@@ -19,13 +19,29 @@ const cairo = Cairo({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: 'جامعة العين العراقية | Al-Ayen Iraqi University',
-    template: '%s | جامعة العين العراقية'
-  },
-  description: 'جامعة العين العراقية - مؤسسة تعليمية رائدة في العراق',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  if (locale === 'en') {
+    return {
+      title: {
+        default: 'Al-Ayen Iraqi University | جامعة العين العراقية',
+        template: '%s | Al-Ayen Iraqi University'
+      },
+      description: 'Al-Ayen Iraqi University - A leading educational institution in Iraq',
+    };
+  }
+  
+  return {
+    title: {
+      default: 'جامعة العين العراقية | Al-Ayen Iraqi University',
+      template: '%s | جامعة العين العراقية'
+    },
+    description: 'جامعة العين العراقية - مؤسسة تعليمية رائدة في العراق',
+  };
+}
+
+
 
 const locales = ['ar', 'en'];
 
