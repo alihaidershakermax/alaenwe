@@ -36,7 +36,7 @@ export default function Particles({
     magnetism: number;
   }>>([]);
   const mouseRef = useRef({ x: 0, y: 0 });
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -84,7 +84,7 @@ export default function Particles({
 
     const animate = () => {
       if (!ctx || !canvas) return;
-      
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particlesRef.current.forEach((particle) => {
@@ -99,7 +99,7 @@ export default function Particles({
         const dx = mouseRef.current.x - particle.x;
         const dy = mouseRef.current.y - particle.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        
+
         if (distance < staticity) {
           const force = (staticity - distance) / staticity;
           particle.translateX += (dx / distance) * force * particle.magnetism;

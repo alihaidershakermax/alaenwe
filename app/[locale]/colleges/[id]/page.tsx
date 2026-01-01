@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id, locale } = await params;
   const college = collegesData.find((c) => c.id === id);
-  
+
   if (!college) {
     return {
       title: 'College Not Found',
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = locale === 'ar' ? college.name : college.nameEn;
-  
+
   return {
     title,
   };
@@ -73,7 +73,7 @@ export default async function CollegeDetailPage({ params }: Props) {
               )}
             </div>
           </div>
-          
+
           <p className="text-lg text-blue-50 leading-relaxed max-w-3xl">
             {description}
           </p>
@@ -97,20 +97,20 @@ export default async function CollegeDetailPage({ params }: Props) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               {isRTL ? 'الأقسام الأكاديمية' : 'Academic Departments'}
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {college.departments.map((dept) => {
                 const deptName = isRTL ? dept.name : dept.nameEn;
-                
+
                 return (
                   <div
-                    key={dept.id}
+                    key={dept.url}
                     className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-university-primary hover:bg-blue-50 transition-all"
                   >
                     <span className="font-medium text-gray-900">{deptName}</span>
-                    {dept.website && (
+                    {dept.url && (
                       <a
-                        href={dept.website}
+                        href={dept.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-university-primary hover:text-university-secondary transition-colors"
