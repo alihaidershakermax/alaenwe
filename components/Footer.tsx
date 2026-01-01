@@ -56,14 +56,10 @@ export default function Footer() {
         {/* Particles Background */}
         <div className="absolute inset-0 opacity-30">
           <Particles
-            particleColors={['#3b82f6', '#60a5fa']}
-            particleCount={50}
-            particleSpread={10}
+            color='#3b82f6'
+            quantity={50}
             speed={0.3}
-            particleBaseSize={80}
-            moveParticlesOnHover={false}
-            alphaParticles={true}
-            disableRotation={true}
+            size={2}
           />
         </div>
 
@@ -153,7 +149,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  {isRTL 
+                  {isRTL
                     ? 'جامعة العين العراقية - صرح علمي متميز يسعى لتقديم تعليم عالي الجودة وبحث علمي رصين.'
                     : 'Al-Ayen Iraqi University - A distinguished academic institution committed to quality education and research.'}
                 </p>
